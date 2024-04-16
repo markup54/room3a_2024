@@ -50,4 +50,9 @@ public class Produkt {
     public void setCena(int cena) {
         this.cena = cena;
     }
+
+    @Override
+    public String toString() {
+        return  nazwa ;
+    }
 }
