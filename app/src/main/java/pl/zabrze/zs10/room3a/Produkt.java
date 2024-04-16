@@ -2,6 +2,7 @@ package pl.zabrze.zs10.room3a;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "produkty")
@@ -16,10 +17,12 @@ public class Produkt {
 
     private  int cena;
 
+    @Ignore
     public Produkt() {
     }
 
     public Produkt(String nazwa, int cena) {
+        id =0;
         this.nazwa = nazwa;
         this.cena = cena;
     }
